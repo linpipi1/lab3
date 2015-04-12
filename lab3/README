@@ -1,0 +1,20 @@
+	
+	(A)
+	compile:
+		g++ -o cows cows.cpp
+	execute:
+		./cows	
+	result:
+		2032	
+	(B)
+	result:
+
+	1000:     sort: 0秒     insertion_sort: 0秒
+	10000:	  sort: 0秒     insertion_sort: 1.27秒
+	100000:	  sort: 0.04秒  insertion_sort: 127.74秒
+	1000000:  sort: 0.51秒  insertion_sort: 12843.7秒
+
+	different:
+	
+	O(n.^2)是insertion_sort()，跑得比較慢，帶入的數字每增加一位，跑的秒數就增加兩位。
+	O(nlogn)是sort()，跑得比較快。
